@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  bot:
+    build: .
+    container_name: telegram_bot
+    environment:
+      - TELEGRAM_BOT_TOKEN=7254556474:AAEJxxb75xXxiBx-rfPOoBnYFj7sqV6ztCw
+    command: python bot.py
